@@ -1,0 +1,94 @@
+class A {
+	void pattern1(int n){
+		for(int i = 1 ; i<=n; i++){
+			for(int j=1 ; j<=i ; j++){
+			System.out.print("*");
+			}
+			for(int k=1 ; k<=n-i ; k++){
+			System.out.print(" ");
+			}
+			for(int l=1 ; l<=n-i-1 ; l++){
+			System.out.print(" ");
+			}
+			for(int m=1 ; m<=i&& m<n ; m++){
+			System.out.print("*");
+			}
+			System.out.println();
+		}
+			System.out.println();
+
+	}
+
+	void pattern2(int n){
+		for(int i=1 ; i<=n ;i++){
+			for(int k =1 ; k<=i-1 ;k++){
+			System.out.print(" ");
+			}
+			for(int j =1 ; j<=n ;j++){
+			System.out.print("*");
+			}
+
+			System.out.println();
+		}
+			System.out.println();
+
+
+	}
+	void pattern3(int n){
+		for(int i=1 ; i<=n ;i++){
+			for(int j=1 ; j<=n-i ; j++){
+			System.out.print(" ");
+			}
+			for(int k=1 ; k<=i ; k++){
+			System.out.print("* ");
+			}
+			System.out.println();
+		}
+		for(int i=1 ; i<=n ;i++){
+			for(int j=1 ; j<=i&& i<n ;j++){
+			System.out.print(" ");
+			}
+			for(int k=1 ; k<=n-i ; k++){
+			System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+	
+         void pattern4() {
+       
+        int count = 1;
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(count++ + " ");
+            }
+            System.out.println();
+        }
+      }      
+   	 void pattern5() {
+       
+        int num = 1;
+        for (int i = 1; i <= 3; i++) {
+            int spaces = (i == 2) ? 0 : 1;
+            for (int s = 1; s <= spaces; s++) System.out.print(" ");
+            
+            if (i == 2) {
+                System.out.print(num++ + " " + num++);
+            }
+            System.out.println();
+        }
+    }
+
+		public void main(String[] args){
+			pattern1(5);
+			pattern2(5);
+			pattern3(5);
+			pattern4();
+			pattern5();
+
+			
+					
+		}
+}
+
+
